@@ -31,7 +31,7 @@ header .container{
 }
 
 .location .location-title{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: var(--fw-800);
     margin-bottom: 3px;
     letter-spacing: 0.5px;
@@ -70,6 +70,7 @@ header .container{
 
 .search-input{
     width: 100%;
+    font-size: 14px;
 }
 
 .search-bar .fa-magnifying-glass{
@@ -78,14 +79,15 @@ header .container{
 }
 
 .login{
-    font-size: 13px;
+    font-size: 15px;
     color: var(--color-grey);
 }
 
 .login:hover{
-    background-color: lightblue;
+    background-color: lavender;
     height: 40px;
     width: 100px;
+    color: black;
 }
 
 .cart button{
@@ -117,21 +119,21 @@ header .container{
 }
 
 .banner-2{
+    margin: 0 16px;
     display: flex;
-    gap: 20px;
     overflow: auto scroll;
-    margin: 0 14px;
+    gap: 20px;
+    border-radius: 12px;
 }
-
-.banner-2::-webkit-scrollbar{
-    display: none;
+.banner-img {
+    height: 195px;
+    width: 336px;
+    cursor: pointer;
+    display: flex;
 }
-
-.banner-2 .banner-img img{
-    height: 165px;
-    width: 285px;
+.banner-img img {
+    height: 100%;
 }
-
 .categories{
     display: grid;
     grid-template-columns: repeat(10, 10%);
@@ -165,6 +167,11 @@ header .container{
 .list-items{
     display: flex;
     column-gap: 22px;
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    overflow: auto scroll;
+    gap: 20px;
 }
 
 .list-items .item{
@@ -172,7 +179,7 @@ header .container{
     border: 0.5px solid rgb(232, 232, 232);
     box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .item .item-img img{
@@ -194,7 +201,7 @@ header .container{
 }
 
 .item-details .item-name{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 800;
     cursor: pointer;
 }
